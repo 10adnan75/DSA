@@ -17,7 +17,7 @@ public class StackArray<E> {
 
     public void resize(int capacity) {
         E[] newStack = (E[]) new Object[capacity];
-        for (int i = 0; i < stack.length; i++) {
+        for (int i = 0; i < N; i++) {
             newStack[i] = stack[i];
         }
         stack = newStack;
@@ -30,7 +30,10 @@ public class StackArray<E> {
 
     public E pop() {
         if (isEmpty()) throw new NullPointerException("Stack underflow!");
-        return stack[--N];
+        E data = stack[--N];
+        stack[N] = null;
+        if (N > 0 && N == stack.length / 4) resize(stack.length / 2);
+        return data;
     }
 
     public void display() {
