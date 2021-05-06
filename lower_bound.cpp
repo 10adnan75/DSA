@@ -1,3 +1,5 @@
+//Array must be sorted. Binary search approach.
+
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
