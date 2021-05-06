@@ -1,3 +1,5 @@
+// Binary search approach, ~ O(log N)
+
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
