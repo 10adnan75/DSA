@@ -49,7 +49,7 @@ public class UnorderedMaxPQArray<Key extends Comparable<Key>> {
         System.out.print("Enter size: ");
         int size = input.nextInt();
         UnorderedMaxPQArray<Integer> maxPQ = new UnorderedMaxPQArray<>(size);
-        System.out.println("Enter elements: ");
+        System.out.print("Enter elements: ");
         for (int i=0; i<size; i++) maxPQ.insert(input.nextInt());
         maxPQ.display();
         System.out.println();
