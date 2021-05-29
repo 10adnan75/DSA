@@ -35,8 +35,8 @@ public class MaxPQBinaryHeap<Key extends Comparable<Key>> {
     private void sink(int k) {
         while (2*k <= N) {
             int j = 2*k;
-            if(j<N && less(j, j+1)) j++;
-            if(!less(k, j)) break;
+            if (j<N && less(j, j+1)) j++;
+            if (!less(k, j)) break;
             exch(k, j);
             k = j;
         }
@@ -50,7 +50,7 @@ public class MaxPQBinaryHeap<Key extends Comparable<Key>> {
         Key swap = pq[i]; pq[i] = pq[j]; pq[j] = swap;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //client
         Scanner input = new Scanner(System.in);
         System.out.print("Enter size: "); int size = input.nextInt();
         MaxPQBinaryHeap<Integer> maxPQ = new MaxPQBinaryHeap<>(size);
