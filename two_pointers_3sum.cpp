@@ -10,8 +10,8 @@ int* three_sum(vector<int>& a, int target) {
             int curr = a[i] + a[lo] + a[hi];
             if (curr == target) {
                 sum[0] = a[i]; 
-        		sum[1] = a[lo];
-        		sum[2] = a[hi];
+                sum[1] = a[lo];
+                sum[2] = a[hi];
                 goto stop;
             } else if (curr < target) {
                 lo++;
