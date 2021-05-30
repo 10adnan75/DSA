@@ -19,20 +19,20 @@ int* two_sum(int a[], int lo, int hi, int target) {
 }
 
 int main() {
-	int n, target;
-	cout<<"Enter size: "; cin>>n;
-	int a[n];
-	cout<<"Enter keys: "; for (int i=0; i<n; i++) cin>>a[i];
-	sort(a, a+n);
-	cout<<"Enter target: "; cin>>target;
-	int* x;
-	x = two_sum(a, 0, n-1, target);
-	if (x[0]==-1 and x[1]==-1) {
-	    cout<<"Sum is not present!\n";   
-	} else {
-	    cout<<"Values: "<<*(x+0)<<" "<<*(x+1)<<"\n";
-	}
-	return 0;
+    int n, target;
+    cout<<"Enter size: "; cin>>n;
+    int a[n];
+    cout<<"Enter keys: "; for (int i=0; i<n; i++) cin>>a[i];
+    sort(a, a+n);
+    cout<<"Enter target: "; cin>>target;
+    int* x;
+    x = two_sum(a, 0, n-1, target);
+    if (x[0]==-1 and x[1]==-1) {
+        cout<<"Sum is not present!\n";   
+    } else {
+	cout<<"Values: "<<*(x+0)<<" "<<*(x+1)<<"\n";
+    }
+    return 0;
 }
 
 /*  OUTPUT:
