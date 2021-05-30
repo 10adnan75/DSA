@@ -2,21 +2,17 @@
 using namespace std;
 
 int* three_sum(vector<int>& a, int target) {
-    bool found = false;
-    int one = 0, two = 0, three = 0;
     static int sum[] = {-1, -1, -1};
     for (int i=0; i<a.size(); i++) {
-        if (found) break;
         int lo = i + 1;
         int hi = a.size() - 1;
         while (lo < hi) {
             int curr = a[i] + a[lo] + a[hi];
             if (curr == target) {
-                found = true;
-                one = i;
-                two = lo;
-                three = hi;
-                break;
+                sum[0] = a[i]; 
+        		sum[1] = a[lo];
+        		sum[2] = a[hi];
+                goto stop;
             } else if (curr < target) {
                 lo++;
             } else {
@@ -24,11 +20,7 @@ int* three_sum(vector<int>& a, int target) {
             }
         }
     }
-    if (found) {
-        sum[0] = a[one]; 
-        sum[1] = a[two];
-        sum[2] = a[three];
-    }
+    stop: return sum;
     return sum;
 }
 
