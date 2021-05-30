@@ -4,7 +4,7 @@ using namespace std;
 int* two_sum(int a[], int lo, int hi, int target) {
     static int sum[] = {-1, -1};
     while (lo < hi) {
-        int s = a[lo]+a[hi];
+        int s = a[lo] + a[hi];
         if (s == target) {
             sum[0] = a[lo]; 
             sum[1] = a[hi];
