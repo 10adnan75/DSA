@@ -34,19 +34,19 @@ int* three_sum(vector<int>& a, int target) {
 
 int main() {
     int n, target;
-	  cout<<"Enter size: "; cin>>n;
-	  vector<int> a(n);
-	  cout<<"Enter keys: "; for (auto &i : a) cin>>i;
-	  sort(a.begin(), a.end());
-	  cout<<"Enter target: "; cin>>target;
-	  int* x;
-	  x = three_sum(a, target);
-	  if (x[0]==-1 and x[1]==-1 and x[2]==-1) {
-	      cout<<"Sum is not present!\n";   
-	  } else {
-	      cout<<"Values: "<<*(x+0)<<" "<<*(x+1)<<" "<<*(x+2)<<"\n";
-	  }
-	  return 0;
+    cout<<"Enter size: "; cin>>n;
+    vector<int> a(n);
+    cout<<"Enter keys: "; for (auto &i : a) cin>>i;
+    sort(a.begin(), a.end());
+    cout<<"Enter target: "; cin>>target;
+    int* x;
+    x = three_sum(a, target);
+    if (x[0]==-1 and x[1]==-1 and x[2]==-1) {
+        cout<<"Sum is not present!\n";   
+    } else {
+        cout<<"Values: "<<*(x+0)<<" "<<*(x+1)<<" "<<*(x+2)<<"\n";
+    }
+    return 0;
 }
 
 /*  OUTPUT:
