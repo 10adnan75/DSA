@@ -50,8 +50,8 @@ int main() {
 }
 
 /*  OUTPUT:
-    Enter size: 5
-    Enter keys: 1 6 8 0 4
-    Enter target: 14
-    Values: 0 6 8
+    Enter size: 6
+    Enter keys: 0 -1 -2 -3 -4 4
+    Enter target: 0
+    Values: -4 0 4
 */ 
