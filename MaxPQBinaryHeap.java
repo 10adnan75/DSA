@@ -6,6 +6,7 @@ public class MaxPQBinaryHeap<Key extends Comparable<Key>> {
 
     public MaxPQBinaryHeap(int capacity) {
         pq = (Key[]) new Comparable[capacity+1];
+        N = 0;
     }
 
     public boolean isEmpty() {
