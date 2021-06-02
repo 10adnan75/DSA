@@ -72,7 +72,7 @@ public class MaxPQBinaryHeap<Key extends Comparable<Key>> {
 
 /*      OUTPUT:
         Enter size: 5
-        Enter elements: 1 2 3 4 5
-        null 5 4 2 1 3 
+        Enter elements: 5 2 4 1 3
+        null 5 3 4 1 2 
         5 4 3 2 1
-*/
+ */
