@@ -59,7 +59,7 @@ public class MinPQBinaryHeap<Key extends Comparable<Key>> {
         for (int i=0; i<=N; i++) System.out.print(pq[i] + " ");
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //client
         Scanner input = new Scanner(System.in);
         System.out.print("Enter size: "); int size = input.nextInt();
         MinPQBinaryHeap<Integer> minPQ = new MinPQBinaryHeap<>(size);
