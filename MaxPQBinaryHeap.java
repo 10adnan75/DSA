@@ -54,12 +54,25 @@ public class MaxPQBinaryHeap<Key extends Comparable<Key>> {
     private void exch(int i, int j) {
         Key swap = pq[i]; pq[i] = pq[j]; pq[j] = swap;
     }
+    
+    public void display() {
+        for (int i=0; i<=N; i++) System.out.print(pq[i] + " ");
+    }
 
     public static void main(String[] args) { //client
         Scanner input = new Scanner(System.in);
         System.out.print("Enter size: "); int size = input.nextInt();
         MaxPQBinaryHeap<Integer> maxPQ = new MaxPQBinaryHeap<>(size);
         System.out.print("Enter elements: "); for (int i=0; i<size; i++) maxPQ.insert(input.nextInt());
+        maxPQ.display();
+        System.out.println();
         while (!maxPQ.isEmpty()) System.out.print(maxPQ.delMax() + " ");
     }
 }
+
+/*      OUTPUT:
+        Enter size: 5
+        Enter elements: 1 2 3 4 5
+        null 5 4 2 1 3 
+        5 4 3 2 1
+*/
