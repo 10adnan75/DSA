@@ -11,13 +11,13 @@ void reverse(int* p, int N) {
 
 int main() {
     int N;
-	  cout<<"Enter size: "; cin>>N;
-	  int* p, a[N];
-	  p = a;
-	  cout<<"Enter keys: "; for (int i=0; i<N; i++) cin>>*(p+i);
-	  reverse(p, N);
-	  cout<<"Reversed array: "; for (int i=0; i<N; i++) cout<<*(p+i)<<" ";
-	  return 0;
+    cout<<"Enter size: "; cin>>N;
+    int* p, a[N];
+    p = a;
+    cout<<"Enter keys: "; for (int i=0; i<N; i++) cin>>*(p+i);
+    reverse(p, N);
+    cout<<"Reversed array: "; for (int i=0; i<N; i++) cout<<*(p+i)<<" ";
+    return 0;
 }
 
 /*  OUTPUT:
