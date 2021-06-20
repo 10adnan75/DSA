@@ -42,7 +42,7 @@ public class StackArray<E> {
         while (copySize-- > 0) System.out.print(stack[copySize] + " ");
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // client
         StackArray<Integer> stack = new StackArray<>();
         int i = 0;
         while (i++ < 10) stack.push(i);
