@@ -50,7 +50,7 @@ public class StackLL<E> {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // client
         StackLL<Integer> stack = new StackLL<>();
         int i = 11;
         while (i-- > 1) stack.push(i);
