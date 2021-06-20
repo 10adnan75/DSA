@@ -61,11 +61,11 @@ public class LinkedBag<Item> implements Iterable<Item> {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        LinkedBag<String> bag = new LinkedBag<>();
+        LinkedBag<Integer> bag = new LinkedBag<>();
         System.out.print("Enter size of bag: "); int size = input.nextInt();
-        System.out.print("Enter items in bag: "); for (int i=0; i<size; i++) bag.add(input.next());
+        System.out.print("Enter items in bag: "); for (int i=0; i<size; i++) bag.add(input.nextInt());
         System.out.println("Bag size: " + bag.size());
-        System.out.print("Bag contents: ") ;for (String s : bag) System.out.print(s + " ");
+        System.out.print("Bag contents: ") ;for (Integer item : bag) System.out.print(item + " ");
     }
 }
  /*
