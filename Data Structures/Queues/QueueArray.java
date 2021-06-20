@@ -1,4 +1,3 @@
-  
 public class QueueArray<E> {
     private E[] queue;
     private int head, tail, size;
