@@ -93,7 +93,7 @@ public class VectorAPI {
         return s.toString();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // client
         double[] xdata = {1.0, 2.0, 3.0, 4.0};
         double[] ydata = {5.0, 2.0, 4.0, 1.0};
         VectorAPI x = new VectorAPI(xdata);
