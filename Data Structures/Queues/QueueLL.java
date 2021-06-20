@@ -50,7 +50,7 @@ public class QueueLL<E> {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // client
         QueueLL<Integer> que = new QueueLL<>();
         int i = 0;
         while (i++ < 10) que.enQueue(i);
