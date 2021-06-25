@@ -3,10 +3,10 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class OrderedSymbolTable<Key extends Comparable<Key>, Value> implements Iterable<Key> {
+public class ST<Key extends Comparable<Key>, Value> implements Iterable<Key> {
     private final TreeMap<Key, Value> ST;
 
-    public OrderedSymbolTable() {
+    public ST() {
         ST = new TreeMap<>();
     }
 
@@ -81,7 +81,7 @@ public class OrderedSymbolTable<Key extends Comparable<Key>, Value> implements I
     }
 
     public static void main(String[] args) {
-        OrderedSymbolTable<Character, Integer> st = new OrderedSymbolTable<>();
+        ST<Character, Integer> st = new ST<>();
         Scanner input = new Scanner(System.in);
         String s = input.nextLine();
         int i=0;
@@ -97,5 +97,5 @@ public class OrderedSymbolTable<Key extends Comparable<Key>, Value> implements I
         A D N A N
         A -> 3
         D -> 1
-        N -> 4
+        N -> 4   
 */
