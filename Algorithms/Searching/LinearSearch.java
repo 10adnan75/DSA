@@ -1,3 +1,5 @@
+// Sequential search: O(n)
+
 import java.util.Scanner;
 
 public class LinearSearch {
