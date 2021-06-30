@@ -26,17 +26,18 @@ int max_sum_array(vector<int> A) {
             max_so_far = max_ending_here;
         } 
     }
+
     return max_so_far;
 }
 
 int main() {
-	int n;
-	cout<<"Enter size: "; cin>>n;
-	vector<int> A(n);
-	cout<<"Enter keys: ";
-	for (int i; cin>>i; ) A.push_back(i);
-	cout<<"Maximum possible sum is: "<<max_sum_array(A);
-	return 0;
+    int n;
+    cout<<"Enter size: "; cin>>n;
+    vector<int> A(n);
+    cout<<"Enter keys: ";
+    for (int i; cin>>i; ) A.push_back(i);
+    cout<<"Maximum possible sum is: "<<max_sum_array(A);
+    return 0;
 }
 
 /*  OUTPUT:
