@@ -241,7 +241,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         } else if (cmp > 0) {
             return 1 + size(x.left) + rank(key, x.right);
         } else {
-        return size(x.left);
+            return size(x.left);
         }
     }
 
