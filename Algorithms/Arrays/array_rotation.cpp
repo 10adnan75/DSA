@@ -22,25 +22,28 @@ void rotate_by_one_right(int a[], int n) {
 void rotate(int left[], int right[], int step, int n) {
     for (int i=0; i<step; i++) {
         rotate_by_one_left(left, n);
-        rotate_by_one_right(right, n);
+    	rotate_by_one_right(right, n);
     }
 }
 
 int main() {
-	int size; 
-	cout<<"Enter size: "; cin>>size;
-	int a[size], left[size], right[size];
-	cout<<"Enter keys: "; for (int i=0; i<size; i++) {
-	    cin>>a[i];
-	    left[i] = a[i];
-	    right[i] = a[i];
-	}
-	int step;
-	cout<<"How many times to rotate?: "; cin>>step;
-	rotate(left, right, step, size);
-	cout<<step<<" times left rotated array: "; for (int i=0; i<size; i++) cout<<left[i]<<" ";
-	cout<<step<<" times right rotated array: "; for (int i=0; i<size; i++) cout<<right[i]<<" ";
-	return 0;
+    int size; 
+    cout<<"Enter size: "; cin>>size;
+    int a[size], left[size], right[size];
+    cout<<"Enter keys: "; 
+    for (int i=0; i<size; i++) {
+        cin>>a[i];
+        left[i] = a[i];
+        right[i] = a[i];
+    }
+    int step;
+    cout<<"How many times to rotate?: "; cin>>step;
+    rotate(left, right, step, size);
+    cout<<step<<" times left rotated array: "; 
+    for (int i=0; i<size; i++) cout<<left[i]<<" ";
+    cout<<step<<" times right rotated array: "; 
+    for (int i=0; i<size; i++) cout<<right[i]<<" ";
+    return 0;
 }
 
 /*  OUTPUT:
