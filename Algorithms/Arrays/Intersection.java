@@ -84,7 +84,7 @@ public class Intersection {
         A.x5: 6
         A.y5: 7
         B.x5: 8
-        B.y5: 9
+        B.y5: -1
         A: 
         0 1
         4 5
