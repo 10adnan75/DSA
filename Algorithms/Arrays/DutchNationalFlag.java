@@ -6,6 +6,8 @@ import java.io.*;
 
 class DutchNationalFlag {
     
+    static String[] colors = {"Red", "White", "Blue"};
+    
     static void DNF(int[] arr, int size) {   
         int low = 0;   
         int high = size - 1;   
@@ -19,11 +21,9 @@ class DutchNationalFlag {
                     low++;   
                     mid++;   
                     break;  
-                
                 case 1: 
                     mid++;   
                     break;
-                
                 case 2: 
                     temp = arr[mid];   
                     arr[mid] = arr[high];   
@@ -36,7 +36,7 @@ class DutchNationalFlag {
 
     static void printArray(int[] arr, int size) {   
         for (int i=0; i<size; i++)   
-        System.out.print(arr[i] + " ");   
+        System.out.print(colors[arr[i]] + " ");   
     }   
 
     public static void main (String[] arguments) {   
@@ -51,6 +51,6 @@ class DutchNationalFlag {
 }  
 
 /*      OUTPUT:
-        Array before executing the DNF's algorithm : 0 1 0 1 2 0 1 2 
-        Array after executing the DNF's algorithm : 0 0 0 1 1 1 2 2 
+        Array before executing the DNF's algorithm : Red White Red White Blue Red White Blue 
+        Array after executing the DNF's algorithm : Red Red Red White White White Blue Blue 
  */
