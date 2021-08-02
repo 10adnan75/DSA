@@ -12,7 +12,7 @@ public class TwoSum {
             } else if (right == key || a[left] + a[right] > value) {
                 right--;
             } else {
-                System.out.println(a[left] + "  " + a[right] + "  " + value);
+                System.out.println(a[left] + " + " + a[right] + " = " + value);
                 return true;
             }
         }
@@ -29,7 +29,7 @@ public class TwoSum {
     }
     
     public static void main (String[] args) {
-        int[] a = {0, 2, 3, 5};
+        int[] a = {0, 2, -2, 1, -1, 5, 3};
         System.out.println(threesum(a));
     }
 }
