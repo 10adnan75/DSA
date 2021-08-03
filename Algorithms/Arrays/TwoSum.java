@@ -19,7 +19,7 @@ public class TwoSum {
         return false;
     }
 
-    public static boolean threesum(int[] a) {
+    public static boolean twosum(int[] a) {
         Arrays.sort(a);
 
         for (int i = 0; i < a.length; i++) {
@@ -30,7 +30,7 @@ public class TwoSum {
     
     public static void main (String[] args) {
         int[] a = {0, 2, -2, 1, -1, 5, 3};
-        System.out.println(threesum(a));
+        System.out.println(twosum(a));
     }
 }
 
