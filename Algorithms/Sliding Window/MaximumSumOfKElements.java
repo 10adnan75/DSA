@@ -21,18 +21,18 @@ class MaximumSumOfKElements {
 	}
 	
 	public static void main (String[] args) throws java.lang.Exception { // client
-		Scanner input = new Scanner(System.in);
-		System.out.print("Enter array length: "); int n = input.nextInt();
-		int[] a = new int[n];
-		System.out.print("Enter keys: "); for (int i=0; i<n; i++) a[i] = input.nextInt();
-		System.out.print("Enter no. of k elements: "); int k = input.nextInt();
-		System.out.print("Maximum sum of " + k + " consecutive elements is: " + findMaxSum(a, k));
+	    Scanner input = new Scanner(System.in);
+            System.out.print("Enter array length: "); int n = input.nextInt();
+            int[] a = new int[n];
+            System.out.print("Enter keys: "); for (int i=0; i<n; i++) a[i] = input.nextInt();
+            System.out.print("Enter no. of k elements: "); int k = input.nextInt();
+            System.out.print("Maximum sum of " + k + " consecutive elements is: " + findMaxSum(a, k));
 	}
 }
 
-/*      OUTPUT:
-        Enter array length: 9
-        Enter keys: 1 4 2 10 2 3 1 0 20
-        Enter no. of k elements: 4
-        Maximum sum of 4 consecutive elements is: 24
+/*          OUTPUT:
+            Enter array length: 9
+            Enter keys: 1 4 2 10 2 3 1 0 20
+            Enter no. of k elements: 4
+            Maximum sum of 4 consecutive elements is: 24
 */
