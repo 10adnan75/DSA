@@ -1,4 +1,4 @@
 # Data Structures and Algorithms
 
-### I refer to this repo when I am stuck somewhere or forget something ✔
+### I refer to this repository when I am stuck somewhere or forget something ✔
 
